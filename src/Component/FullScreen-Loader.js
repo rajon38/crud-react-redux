@@ -5,9 +5,9 @@ const FullScreenLoader = () => {
     const settings = useSelector((state) => state.settings.loader)
     return (
         <div>
-            <div className={settings + "LoadingOverlay"}>
+            <div  className={settings + " LoadingOverlay"}>
                 <div className="Line-Progress">
-                    <div className="indeterminate" />
+                    <div className="indeterminate"/>
                 </div>
             </div>
         </div>

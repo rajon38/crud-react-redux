@@ -1,9 +1,9 @@
+import React from 'react';
 import {Container, Nav, Navbar} from "react-bootstrap";
 import {NavLink} from "react-router-dom";
 
-
 const AppNavBar = () => {
-    return(
+    return (
         <div className="mb-4">
             <Navbar className="shadow-sm" bg="light" variant="light">
                 <Container>
@@ -15,7 +15,7 @@ const AppNavBar = () => {
                 </Container>
             </Navbar>
         </div>
-    )
-}
+    );
+};
 
 export default AppNavBar;

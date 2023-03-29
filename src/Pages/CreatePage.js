@@ -1,12 +1,13 @@
 import React from 'react';
-import CreateUpdateForm from "../Components/CreateUpdateForm";
-import AppNavBar from "../Components/AppNavBar";
+import App from "../App";
+import AppNavBar from "../Component/AppNavBar";
+import CreateUpdateForm from "../Component/CreateUpdateForm";
 
 const CreatePage = () => {
     return (
         <div>
-            <AppNavBar />
-            <CreateUpdateForm />
+            <AppNavBar/>
+            <CreateUpdateForm/>
         </div>
     );
 };

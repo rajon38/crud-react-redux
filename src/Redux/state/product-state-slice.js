@@ -1,10 +1,10 @@
 import {createSlice} from "@reduxjs/toolkit";
 
-export const productStateSlice = createSlice({
-    name: "product",
+export const productStateSlice=createSlice({
+    name:"product",
     initialState:{
         List:[],
-        FromValue:{
+        FormValue:{
             Img:"",
             ProductCode:"",
             ProductName:"",
@@ -15,16 +15,21 @@ export const productStateSlice = createSlice({
     },
     reducers:{
         setProductList:(state,action)=>{
-            state.List = action.payload
+            state.List=action.payload
         },
         OnChangeProductInput:(state,action)=>{
-            state.FromValue[`${action.payload.Name}`]=action.payload.Value;
+            state.FormValue[`${action.payload.Name}`]=action.payload.Value;
         },
-        ResetProductFromValue:(state,action)=>{
-            Object.keys(state.FromValue).forEach((i)=>state.FromValue[i]="");
+        ResetProductFormValue:(state,action)=>{
+            Object.keys(state.FormValue).forEach((i) => state.FormValue[i] = "");
         }
     }
+
 })
 
-export const {setProductList,OnChangeProductInput}= productStateSlice.actions
-export default productStateSlice.reducer
+
+
+
+export const {setProductList,OnChangeProductInput}=productStateSlice.actions
+export default  productStateSlice.reducer;
+
